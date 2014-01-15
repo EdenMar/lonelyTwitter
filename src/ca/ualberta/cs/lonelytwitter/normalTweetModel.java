@@ -27,5 +27,13 @@ public class normalTweetModel extends lonelyTweetModel
 		// TODO Auto-generated method stub
 
 	}
+	
+	@Override
+	public void boolean setImportant(boolean important) throws Exception {
+		if(important){
+			throw new IllegalArgumentException();
+		}
+		this.important = important;
+	}
 
 }

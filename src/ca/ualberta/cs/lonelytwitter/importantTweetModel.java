@@ -23,4 +23,12 @@ public class importantTweetModel extends lonelyTweetModel
 	public void setText(String text){
 		this.text = text;
 	}
+	
+	@Override
+	public void boolean setImportant(boolean important) throws Exception {
+		if(!important){
+			throw new IllegalArgumentException();
+		}
+		this.important = important;
+	}
 }
