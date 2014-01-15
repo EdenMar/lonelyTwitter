@@ -4,10 +4,10 @@ import java.util.Date;\
 
 
 
-public class lonelyTweetModel {
+public abstract class lonelyTweetModel {
 
-	private String text;
-	private Date timestamp;
+	protected String text;
+	protected Date timestamp;
 	
 	public lonelyTweetModel(String text, Date timestamp)
 	{
@@ -33,11 +33,7 @@ public class lonelyTweetModel {
 	}
 
 	
-	public void setText(String text)
-	{
-	
-		this.text = text;
-	}
+	public abstract void setText(String text)
 	
 	public Date getTimestamp()
 	{
