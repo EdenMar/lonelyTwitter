@@ -3,17 +3,17 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 
-public class normalTweetModel extends lonelyTweetModel
+public class NormalTweetModel extends LonelyTweetModel
 {
 
-	public normalTweetModel(String text, Date timestamp)
+	public NormalTweetModel(String text, Date timestamp)
 	{
 
 		super(text, timestamp);
 		// TODO Auto-generated constructor stub
 	}
 
-	public normalTweetModel(String text)
+	public NormalTweetModel(String text)
 	{
 
 		super(text);
@@ -21,19 +21,18 @@ public class normalTweetModel extends lonelyTweetModel
 	}
 
 	@Override
-	public void setText(String text)
-	{
-
-		// TODO Auto-generated method stub
-
-	}
-	
-	@Override
-	public void boolean setImportant(boolean important) throws Exception {
+	public void setImportant(boolean important) throws Exception {
 		if(important){
 			throw new IllegalArgumentException();
 		}
 		this.important = important;
 	}
 
+	@Override
+	public void setText(String text)
+	{
+
+		// TODO Auto-generated method stub
+		
+	}
 }

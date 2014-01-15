@@ -3,15 +3,13 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 
-public abstract class lonelyTweetModel {
+public abstract class LonelyTweetModel {
 
 	protected String text;
 	protected Date timestamp;
 	protected boolean important;
-	
-	public abstract boolean setImportant() throw Exception ;
-	
-	public lonelyTweetModel(String text, Date timestamp)
+		
+	public LonelyTweetModel(String text, Date timestamp)
 	{
 
 		super();
@@ -19,7 +17,7 @@ public abstract class lonelyTweetModel {
 		this.timestamp = timestamp;
 	}
 	
-	public lonelyTweetModel(String text)
+	public LonelyTweetModel(String text)
 	{
 
 		super();
@@ -47,7 +45,9 @@ public abstract class lonelyTweetModel {
 	{
 	
 		this.timestamp = timestamp;
-	} 
+	}
+
+	public abstract void setImportant(boolean important) throws Exception;
 
 	
 }
